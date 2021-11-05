@@ -17,9 +17,11 @@ block content
             div.row
                 if item.completed
                     a(href=`incomplete/${item.id}`) Mark Incomplete
+                    br
                 else
                     a(href=`complete/${item.id}`) Mark Complete
                     br
+
                 a(href=`delete/${item.id}`) Delete Item
                 br
                 a(href=`edit/${item.id}`) Edit Item
